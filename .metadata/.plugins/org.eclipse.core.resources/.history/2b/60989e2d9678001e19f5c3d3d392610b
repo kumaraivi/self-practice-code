@@ -1,0 +1,23 @@
+package com.sample.java.practice;
+
+
+
+public class ExceptionHandling {
+	
+	
+	public static void main(String args[])  {
+		
+		try {
+			int b=10/0;
+			File fl=new FIle(".//");
+			Thread.sleep(300);
+		}catch (InterruptedException e) {
+			System.out.println(e);
+		}catch (ArithmeticException e) {
+			System.out.println(e);
+		}
+		
+		System.out.println("Done");
+	}
+
+}

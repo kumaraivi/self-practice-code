@@ -1,0 +1,24 @@
+package com.sample.java.practice;
+
+import java.io.File;
+
+public class ExceptionHandling {
+	
+	
+	public static void main(String args[])  {
+		int b = 0;
+		try {
+			int[] myNumbers = {1, 2, 3};
+		    System.out.println(myNumbers[1]);
+			b=10/0;
+			
+		}catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println(e);
+		}catch (ArithmeticException e) {
+			System.out.println(e);
+		}
+		
+		System.out.println(b);
+	}
+
+}

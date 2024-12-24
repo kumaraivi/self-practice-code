@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1573" started-at="2023-01-26T16:54:51 IST" finished-at="2023-01-26T16:54:52 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1573" started-at="2023-01-26T16:54:51 IST" finished-at="2023-01-26T16:54:52 IST">
+      <class name="com.eot.sample.android.AppiumNativeAndroidMessagesTest">
+        <test-method status="PASS" signature="beforeAll()[pri:0, instance:com.eot.sample.android.AppiumNativeAndroidMessagesTest@376b4233]" name="beforeAll" is-config="true" duration-ms="1173" started-at="2023-01-26T16:54:49 IST" finished-at="2023-01-26T16:54:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeAll -->
+        <test-method status="FAIL" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.eot.sample.android.AppiumNativeAndroidMessagesTest@376b4233]" name="beforeMethod" is-config="true" duration-ms="1499" started-at="2023-01-26T16:54:51 IST" finished-at="2023-01-26T16:54:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.eot.sample.android.AppiumNativeAndroidMessagesTest.runMessagesTest()]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Avinashs-MacBook-Air.local', ip: '2405:201:8000:f05e:e9ed:e10:b33c:f41c%en0'
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_331'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.messaging.ui.ConversationListActivity, appium:appPackage=com.google.android.apps.messaging, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.mes..., appPackage: com.google.android.apps.mes..., automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 11}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Avinashs-MacBook-Air.local', ip: '2405:201:8000:f05e:e9ed:e10:b33c:f41c%en0'
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_331'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.messaging.ui.ConversationListActivity, appium:appPackage=com.google.android.apps.messaging, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.mes..., appPackage: com.google.android.apps.mes..., automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 11}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at com.eot.sample.android.AppiumNativeAndroidMessagesTest.createAppiumDriver(AppiumNativeAndroidMessagesTest.java:92)
+at com.eot.sample.android.AppiumNativeAndroidMessagesTest.beforeMethod(AppiumNativeAndroidMessagesTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="runMessagesTest()[pri:0, instance:com.eot.sample.android.AppiumNativeAndroidMessagesTest@376b4233]" name="runMessagesTest" duration-ms="0" started-at="2023-01-26T16:54:52 IST" finished-at="2023-01-26T16:54:52 IST">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Avinashs-MacBook-Air.local', ip: '2405:201:8000:f05e:e9ed:e10:b33c:f41c%en0'
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_331'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.messaging.ui.ConversationListActivity, appium:appPackage=com.google.android.apps.messaging, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.mes..., appPackage: com.google.android.apps.mes..., automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 11}}]
+Capabilities {}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: 'Avinashs-MacBook-Air.local', ip: '2405:201:8000:f05e:e9ed:e10:b33c:f41c%en0'
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.1', java.version: '1.8.0_331'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.google.android.apps.messaging.ui.ConversationListActivity, appium:appPackage=com.google.android.apps.messaging, appium:automationName=UiAutomator2, appium:deviceName=emulator-5554, appium:fullReset=false, appium:noReset=false, platformName=ANDROID, appium:platformVersion=11}], desiredCapabilities=Capabilities {appActivity: com.google.android.apps.mes..., appPackage: com.google.android.apps.mes..., automationName: UiAutomator2, deviceName: emulator-5554, fullReset: false, noReset: false, platformName: ANDROID, platformVersion: 11}}]
+Capabilities {}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:148)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+at com.eot.sample.android.AppiumNativeAndroidMessagesTest.createAppiumDriver(AppiumNativeAndroidMessagesTest.java:92)
+at com.eot.sample.android.AppiumNativeAndroidMessagesTest.beforeMethod(AppiumNativeAndroidMessagesTest.java:30)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runMessagesTest -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.eot.sample.android.AppiumNativeAndroidMessagesTest@376b4233]" name="afterMethod" is-config="true" duration-ms="-1674732292568" started-at="2023-01-26T16:54:52 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterSuite()[pri:0, instance:com.eot.sample.android.AppiumNativeAndroidMessagesTest@376b4233]" name="afterSuite" is-config="true" duration-ms="-1674732292636" started-at="2023-01-26T16:54:52 IST" finished-at="1970-01-01T05:30:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.eot.sample.android.AppiumNativeAndroidMessagesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

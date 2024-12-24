@@ -1,0 +1,17 @@
+package com.sample.java.practice;
+
+public class ExceptionHandling {
+	
+	
+	public static void main(String args[]) {
+		
+		try {
+			int b=10/0;
+		}catch (Exception e) {
+			System.out.println(e);
+		}
+		
+		System.out.println("Done");
+	}
+
+}
